@@ -54,7 +54,7 @@ app.post('/homeless', function(req, res, next) {
         .then(function(pic) {
             // Inserts Location data to  Locations table
             Refferals.create({refferalStatus_id:1,
-                              pic_id: pic.dataValues.id,
+                              pic_id: pic.id,
                               name: fields.name[0],
                               firstName: fields.firstName[0],
                               lastName: fields.lastName[0],
